@@ -12,8 +12,8 @@
                 <pattern>${PATTERN}</pattern>
             </encoder>
         </appender>
-        <logger name="com.light.springboot" level="debug" />
-        <root level="debug">
+        <logger name="com.springboot.demo" level="debug" />
+        <root level="info">
             <appender-ref ref="CONSOLE" />
         </root>
     </springProfile>
@@ -34,6 +34,7 @@
                 <pattern>${PATTERN}</pattern>
             </layout>
         </appender>
+        <logger name="com.springboot.demo" level="debug" />
         <root level="info">
             <appender-ref ref="TEST-FILE" />
         </root>
@@ -51,7 +52,7 @@
                 <pattern>${PATTERN}</pattern>
             </layout>
         </appender>
-        <root level="info">
+        <root level="wrong">
             <appender-ref ref="PROD_FILE" />
         </root>
     </springProfile>
