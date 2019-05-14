@@ -12,7 +12,7 @@ public class UserTokenAppInterseptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        logger.debug("User token app interceptor!");
+        logger.debug("User token app interceptor! 拦截器");
         return true;
     }
 
