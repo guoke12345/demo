@@ -1,4 +1,4 @@
-package com.springboot.demo.constant;
+package com.springboot.demo.config.constant;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
