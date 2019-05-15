@@ -6,13 +6,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * @Description 异常处理类
  * @Author zwc
  * @Date 2019/5/14
  */
-@ControllerAdvice
+@RestControllerAdvice
 public class BusinessExceptionHandler {
     private static Logger logger = LoggerFactory.getLogger(BusinessExceptionHandler.class);
 

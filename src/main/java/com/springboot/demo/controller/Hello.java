@@ -22,7 +22,6 @@ public class Hello extends BaseController{
     @RequestMapping("/hello")
     public String hello(String hello){
 
-//        logger.info("ConfigMethodOne getContantTest:{}",configMethodOne.getContantTest());
         logger.info("configMethodTwo gettest:{}",configMethodTwo.getConstant());
         logger.info("测试日志打印！");
         int a = 2/0;
