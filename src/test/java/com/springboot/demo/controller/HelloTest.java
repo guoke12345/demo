@@ -30,7 +30,7 @@ public class HelloTest extends DemoApplicationTests {
     @Test
     public void test() throws Exception {
         mockMvc.perform(
-                MockMvcRequestBuilders.get("/hello").accept(MediaType.ALL)
+                MockMvcRequestBuilders.get("/testMybatiesPlus").accept(MediaType.ALL)
         );
 //                .andExpect(MockMvcResultMatchers.status().isOk())
 //                .andDo(MockMvcResultHandlers.print())

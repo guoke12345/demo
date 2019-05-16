@@ -1,5 +1,6 @@
 package com.springboot.demo.config.filter;
 
+import com.springboot.util.UUIDGenerator;
 import org.slf4j.MDC;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.stereotype.Component;
@@ -40,14 +41,14 @@ public class LoggerKeyFilter implements Filter {
     }
 
     /**
-     *
+     * logkey 也就是 requestId
      * @return
      */
     private String getLogkey() {
-        StringBuilder requestIdBuffer = new StringBuilder(UUID.randomUUID().toString());
-        requestIdBuffer.insert(0,"[");
-        requestIdBuffer.insert(requestIdBuffer.length(),"]");
-        return requestIdBuffer.toString().replace("-","");
+        StringBuilder requestId = new StringBuilder(UUIDGenerator.getUUIDSlip());
+        requestId.insert(0, "[");
+        requestId.insert(requestId.length(), "]");
+        return requestId.toString();
     }
 }
 
