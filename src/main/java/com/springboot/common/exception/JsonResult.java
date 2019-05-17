@@ -1,8 +1,5 @@
-package com.springboot.demo.common;
+package com.springboot.common.exception;
 
-
-import com.springboot.demo.common.exception.ActionConstants;
-import com.springboot.demo.common.exception.ResultCode;
 
 import java.io.Serializable;
 

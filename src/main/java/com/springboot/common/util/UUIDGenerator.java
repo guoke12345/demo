@@ -1,4 +1,4 @@
-package com.springboot.util;
+package com.springboot.common.util;
 
 import java.util.UUID;
 

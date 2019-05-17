@@ -1,12 +1,10 @@
 package com.springboot.demo.controller;
 
-import com.springboot.demo.common.exception.BusinessException;
 import com.springboot.demo.config.constant.ConfigMethodOne;
 
 import com.springboot.demo.config.constant.ConfigMethodTwo;
 import com.springboot.demo.entity.HlHlappMember;
 import com.springboot.demo.mapper.HlHlappMemberMapper;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

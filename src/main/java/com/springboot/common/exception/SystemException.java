@@ -1,4 +1,4 @@
-package com.springboot.demo.common.exception;
+package com.springboot.common.exception;
 
 public class SystemException extends RuntimeException {
 

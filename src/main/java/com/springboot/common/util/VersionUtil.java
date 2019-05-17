@@ -1,4 +1,4 @@
-package com.springboot.util;
+package com.springboot.common.util;
 
 /**
  * 版本号比较工具类

@@ -1,4 +1,4 @@
-package com.springboot.demo.common.exception;
+package com.springboot.common.exception;
 
 /**
  * Created by giozola on 2017/7/7.
