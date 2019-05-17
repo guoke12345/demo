@@ -19,7 +19,7 @@ public class AddressResolutionUtil {
 
     public static final String PROVINCE_REGX = "(?<province>.*?自治区|.*?省|.*?行政区)?";
     public static final String CITY_REGX = "(?<city>.*?自治州|.*?地区|.*?行政单位|.*?盟|.*?市辖区|.*?市)?";
-    public static final String COUNTRY_REGX = "(?<county>.*?县|.+区|.+市|.+旗|.+海域|.+岛)?";
+    public static final String COUNTRY_REGX = "(?<county>.*?县|.*?区|.*?市|.*?旗|.*?海域|.*?岛)?";
     public static final String TOWN_REGX = "(?<town>[^区]+区|.+镇)?";
     public static final String VILLAGE_REGX = "(?<village>.*)";
 
