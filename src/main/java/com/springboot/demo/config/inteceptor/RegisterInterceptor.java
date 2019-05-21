@@ -17,7 +17,6 @@ public class RegisterInterceptor extends WebMvcConfigurationSupport {
         registry.addInterceptor(new UserTokenAppInterseptor())
                 .addPathPatterns("/**")
                 .excludePathPatterns("/favicon.ico");
-        super.addInterceptors(registry);
     }
 
 }

@@ -6,13 +6,14 @@ import org.springframework.web.servlet.HandlerInterceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class UserTokenAppInterseptor implements HandlerInterceptor {
     private Logger logger = LoggerFactory.getLogger(UserTokenAppInterseptor.class);
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        logger.debug("User token app interceptor! 拦截器");
+        logger.debug("User token app interceptor! 拦截器 {}", request.getRequestURI());
         return true;
     }
 

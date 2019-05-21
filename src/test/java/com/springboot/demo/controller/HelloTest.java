@@ -36,4 +36,18 @@ public class HelloTest extends DemoApplicationTests {
 //                .andDo(MockMvcResultHandlers.print())
 //                .andReturn();
     }
+
+    @Test
+    public void helloTest() throws Exception {
+        mockMvc.perform(
+                MockMvcRequestBuilders.get("/hello")
+                        .accept(MediaType.ALL)
+                        .param("hello", "hello")
+                        .param("param1", "param1")
+                        .param("param2", "")
+        )
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andDo(MockMvcResultHandlers.print());
+//                .andReturn();
+    }
 }

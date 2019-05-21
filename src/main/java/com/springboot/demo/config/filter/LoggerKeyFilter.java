@@ -1,6 +1,6 @@
 package com.springboot.demo.config.filter;
 
-import com.springboot.util.UUIDGenerator;
+import com.springboot.common.util.UUIDGenerator;
 import org.slf4j.MDC;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.stereotype.Component;
